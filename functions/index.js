@@ -56,7 +56,6 @@ app.post('/api/saveexpense', async (req, res) => {
 
 // To delete a transaction
 app.delete('/api/deleteexpense', async (req, res) => {
-
     const id = req.query.id;
     await db.collection("expenses").doc(id).delete().then(data => {
         res.send({
