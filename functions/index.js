@@ -38,7 +38,6 @@ app.get('/api/getexpenses', async (req, res) => {
 app.post('/api/saveexpense', async (req, res) => {
 
     const expense = {
-        id: req.body.id,
         expense: req.body.text,
         amount: req.body.amount
     };
